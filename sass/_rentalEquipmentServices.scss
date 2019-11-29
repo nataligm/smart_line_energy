@@ -1,0 +1,107 @@
+.RentServices{
+  background-image: url("../images/bg/rentalEqServ.png");
+  background-size: cover;
+  background-position: center;
+  font-family: "GilroyRegular", sans-serif;
+  padding: 50px 165px 0;
+  display: flex;
+  align-items: center;
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  .container{
+    width: 100%;
+    @include flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include flex-wrap(wrap);
+  }
+  .section-title{
+    font-family: "GilroySemiBold", sans-serif;
+    color: $basic-orange;
+    font-size: 36px;
+    letter-spacing: 0.72px;
+    line-height: 43px;
+    margin-bottom: 30px;
+  }
+  .st2{
+    margin-bottom: 102px;
+  }
+  .rent-description{
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    line-height: 19px;
+    text-align: center;
+    max-width: 729px;
+    margin-bottom: 30px;
+  }
+  .info-wrap{
+    max-width: 1110px;
+    width: 100%;
+    @include flex;
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+    margin-bottom: 50px;
+    .col{
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 10px 30px #0000001A;
+      img{
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+      }
+    }
+    .picture{
+      height: 200px;
+      background-color: #363636;
+      border-radius: 10px 10px 0 0;
+    }
+    .info{
+      padding: 20px;
+      background-color: #fff;
+    }
+    h3{
+      font-family: "GilroySemiBold", sans-serif;
+      margin-bottom: 20px;
+      font-size: 24px;
+      letter-spacing: 0.48px;
+      line-height: 29px;
+    }
+    p{
+      line-height: 22px;
+      max-height: 90px;
+      min-height: 90px;
+      overflow: hidden;
+    }
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include btn-w-145;
+    font-size: 16px;
+  }
+  .orange-btn{
+    background-color: $basic-orange;
+  }
+  .blue-btn{
+    background-color: $basic-blue;
+  }
+  .grey-line{
+    height: 1px;
+    width: 100%;
+  }
+  .buttons-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #DDDDDD;
+    border-radius: 0 0 10px 10px;
+  }
+}
+.tigerRentals{
+  .video-blue-block{
+    height: 312px;
+    background-color: $basic-blue;
+  }
+}

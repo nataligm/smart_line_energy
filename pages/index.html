@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('../templates/head.html')
+
+<body>
+@@include('../templates/header.html')
+@@include('../templates/RentalEquipmentServices.html')
+@@include('../templates/rentalPackages.html')
+@@include('../templates/footer.html')
+<script src="/js/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $(document).on("click", ".scroll-to-top", function (e) {
+            e.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+        })
+    });
+</script>
+
+</body>
+</html>
