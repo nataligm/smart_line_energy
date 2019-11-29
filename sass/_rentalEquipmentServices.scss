@@ -103,5 +103,15 @@
   .video-blue-block{
     height: 312px;
     background-color: $basic-blue;
+    position: relative;
+  }
+  video{
+    box-sizing: border-box;
+    position: absolute;
+    top: -23%;
+    left: 50%;
+    transform: translate(-50% );
+    border: 4px solid $basic-blue;
   }
 }
+
