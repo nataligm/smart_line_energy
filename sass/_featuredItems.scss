@@ -4,6 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 30px;
   .container{
     width: 100%;
     display: flex;
@@ -33,5 +34,74 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    .col{
+      border-radius: 10px;
+      width: 540px;
+      box-shadow: 0 10px 30px #0000001A;
+      img{
+        height: 100%;
+      }
+    }
+    .picture{
+      height: 200px;
+      background-color: #363636;
+    }
+    p{
+      font-size: 16px;
+      line-height: 22px;
+      max-height: 90px;
+      min-height: 90px;
+    }
+    .info{
+      padding: 20px;
+      background-color: #fff;
+      line-height: 22px;
+    }
+    .title-wrap{
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+      background-color: #fff;
+    }
+    .buttons-wrap{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      border-top: 1px solid #DDDDDD;
+      background-color: #fff;
+      border-radius: 0 0 10px 10px;
+    }
+    h3{
+      font-family: "GilroySemiBold", sans-serif;
+      margin-bottom: 5px;
+      font-size: 24px;
+      letter-spacing: 0.48px;
+      line-height: 29px;
+    }
+    .subtitle{
+      display: inline-block;
+      font-size: 14px;
+      letter-spacing: 0.28px;
+      line-height: 22px;
+    }
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include btn-w-240;
+    font-size: 16px;
+  }
+  .orange-btn{
+    background-color: $basic-orange;
+    box-shadow: $box-shadow-orange-btn;
+  }
+  .blue-btn{
+    background-color: $basic-blue;
+    box-shadow: $box-shadow-blue-btn;
+  }
+  .xl-btn{
+    width: 500px;
+    min-width: 240px;
+
   }
 }

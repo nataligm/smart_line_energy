@@ -82,9 +82,11 @@
   }
   .orange-btn{
     background-color: $basic-orange;
+    box-shadow: $box-shadow-orange-btn;
   }
   .blue-btn{
     background-color: $basic-blue;
+    box-shadow: $box-shadow-blue-btn;
   }
   .grey-line{
     height: 1px;
