@@ -52,6 +52,8 @@
     p{
       font-size: 16px;
       line-height: 22px;
+      max-height: 90px;
+      min-height: 90px;
     }
     .info{
       padding: 20px;
@@ -61,7 +63,6 @@
       padding: 20px;
       border-radius: 10px 10px 0 0;
       background-color: #fff;
-
     }
     h3{
       font-family: "GilroySemiBold", sans-serif;
@@ -95,5 +96,4 @@
   .orange-btn{
     background-color: $basic-orange;
   }
-
 }
