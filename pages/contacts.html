@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('../templates/head.html')
+
+<body>
+@@include('../templates/header.html')
+@@include('../templates/RentalEquipmentServices.html')
+@@include('../templates/rentalPackages.html')
+@@include('../templates/featuredItems.html')
+@@include('../templates/footer.html')
+<script src="/js/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $(document).on("click", ".scroll-to-top", function (e) {
+            e.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+        })
+    });
+   var burgerBtn = document.querySelector('.burger-btn');
+
+   var navigation = document.querySelector('.navigation');
+   var signupBtn = document.querySelector('.signup-btn');
+   var headerTop = document.querySelector('.header-top');
+
+   burgerBtn.addEventListener('click', crossFunction);
+   function crossFunction(){
+       // burgerBtn.classList.toggle("isClicked");
+       headerTop.classList.toggle("menu-open");
+       // navigation.classList.toggle("toggleNav");
+    }
+</script>
+
+</body>
+</html>
