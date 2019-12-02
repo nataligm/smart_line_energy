@@ -41,6 +41,16 @@
       img{
         height: 100%;
       }
+      .btn{
+        @include btn-w-240;
+      }
+      .xl-btn{
+        width: 500px;
+        min-width: 240px;
+      }
+      &:first-child, &:nth-child(2){
+        margin-bottom: 30px;
+      }
     }
     .picture{
       height: 200px;
@@ -83,12 +93,42 @@
       letter-spacing: 0.28px;
       line-height: 22px;
     }
+    .action-wrap{
+      padding: 50px 0;
+      margin-top: 50px;
+      border-top: 1px solid #DDDDDD;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1110px;
+      width: 100%;
+    }
+    .action-col{
+      width: 350px;
+      box-shadow: 0 10px 30px #0000001A;
+      .orange-btn{
+        @include btn-w-310;
+      }
+    }
+    .f-act-col{
+      .orange-btn{
+        min-width: 125px;
+        width: 125px;
+        border-radius: 50px;
+        height: 40px;
+      }
+      .blue-btn{
+        height: 40px;
+        min-width: 165px;
+        width: 165px;
+        border-radius: 50px;
+      }
+    }
   }
   .btn{
     display: flex;
     justify-content: center;
     align-items: center;
-    @include btn-w-240;
     font-size: 16px;
   }
   .orange-btn{
@@ -99,9 +139,5 @@
     background-color: $basic-blue;
     box-shadow: $box-shadow-blue-btn;
   }
-  .xl-btn{
-    width: 500px;
-    min-width: 240px;
 
-  }
 }
