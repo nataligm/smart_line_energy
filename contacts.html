@@ -372,11 +372,16 @@
         })
     });
    var burgerBtn = document.querySelector('.burger-btn');
+
+   var navigation = document.querySelector('.navigation');
+   var signupBtn = document.querySelector('.signup-btn');
    var headerTop = document.querySelector('.header-top');
 
    burgerBtn.addEventListener('click', crossFunction);
    function crossFunction(){
+       // burgerBtn.classList.toggle("isClicked");
        headerTop.classList.toggle("menu-open");
+       // navigation.classList.toggle("toggleNav");
     }
 </script>
 

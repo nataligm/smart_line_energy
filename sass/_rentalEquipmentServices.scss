@@ -117,6 +117,7 @@
     border: 4px solid $basic-blue;
   }
 }
+
 @media screen and (max-width: 1400px){
   .RentServices{
     .info-wrap{
@@ -170,6 +171,10 @@
 }
 @media screen and (max-width: 340px){
   .RentServices{
+    .btn{
+      min-width: 120px;
+      width: 120px;
+    }
     .info-wrap{
       .col{
         max-width: 300px;

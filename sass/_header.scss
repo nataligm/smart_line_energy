@@ -26,7 +26,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    vertical-align: middle;
     box-shadow: 0 3px 6px #00000040;
   }
   .orange-btn{
@@ -40,6 +39,7 @@
   .view-pln-btn{
     background-color: #ffffff;
     color: $basic-orange;
+    box-shadow: 0 3px #B7B7B7;
   }
   .ht-buttons, h1{
     font-family: "GilroySemiBold", sans-serif;
@@ -70,7 +70,7 @@
     line-height: 19px;
     align-self: center;
     height: 53px;
-    //position: relative;
+    position: relative;
   }
   .ht-details{
     margin-bottom: 50px;
@@ -92,85 +92,85 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    //width: 387px;
     width: 825px;
     .nav-link{
       &:nth-last-child(2){
-        margin-right: 278px;
+        margin-right: 248px;
+      }
+    }
+  }
+  .burger-btn{
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    .burger-line{
+      width: 28px;
+      height: 3px;
+      background-color: #fff;
+      position: absolute;
+      top: 4px;
+      right: 10px;
+    }
+    .first-l{
+      top: 14px;
+    }
+    .second-l{
+      top: 24px;
+      transition: 0.5s;
+    }
+    .third-l{
+      top: 24px;
+      transition: 0.5s;
+    }
+  }
+}
+
+@media screen and (max-width: 1445px){
+  .header{
+    .navigation{
+      width: 600px;
+      .nav-link:nth-last-child(2) {
+        margin-right: 0;
       }
     }
   }
 }
-.burger-btn{
-  position: relative;
-  width: 30px;
-  height: 30px;
-  .burger-line{
-    width: 28px;
-    height: 3px;
-    background-color: #fff;
-    position: absolute;
-    top: 4px;
-    right: 10px;
-  }
-  .first-l{
-    top: 14px;
-  }
-  .second-l{
-    top: 24px;
-    transition: 0.5s;
-  }
-  .third-l{
-    top: 24px;
-    transition: 0.5s;
+@media screen and (max-width: 1217px){
+  .header{
+    padding-left: 60px;
+    padding-right: 60px;
+    .navigation{
+      width: 550px;
+    }
+    .logo-image{
+      margin-right: 52px;
+    }
   }
 }
-//.burger-btn.isClicked {
-//  .first-l {
-//    display: none;
-//  }
-//  .second-l {
-//    transform: rotate(45deg);
-//    transition: 0.5s;
-//  }
-//  .third-l {
-//    transform: rotate(-45deg);
-//    transition: 0.5s;
-//  }
-//}
-
-//.navigation.toggleNav{
-  //.header{
-  //  .navigation{
-  //    width: 160px;
-  //    flex-direction: column;
-  //    .nav-link{
-  //      &:nth-last-child(2){
-  //        margin-right: 0;
-  //      }
-  //    }
-  //  }
-  //}
-//}
 @media screen and (max-width: 1073px){
   .header{
+    padding-bottom: 64px;
     .navigation{
       display: none;
       width: 160px;
       flex-direction: column;
       position: absolute;
-      right: -56px;
+      right: 10px;
       top: 50px;
       .nav-link{
+        padding: 4px 0;
         &:nth-last-child(2){
           margin-right: 0;
         }
       }
     }
+    .burger-btn{
+        display: block;
+      }
     .header-top.menu-open {
       .navigation {
         display: flex;
-
       }
       .burger-btn {
         position: relative;
@@ -184,6 +184,25 @@
         .third-l {
           transform: rotate(-45deg);
           transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px){
+  .header{
+    padding-left: 40px;
+    padding-right: 40px;
+    h1{
+      font-size: 43px;
+      line-height: 43px;
+    }
+    .ht-buttons{
+      min-width: 160px;
+      flex-direction: column;
+      .ht-btn{
+        &:first-child{
+          margin-bottom: 15px;
         }
       }
     }

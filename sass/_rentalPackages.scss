@@ -116,7 +116,7 @@
   .rentalPackages{
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 50px;
+    padding-top: 100px;
     .buttons-wrap{
       padding-left: 0;
       padding-right: 0;
@@ -126,6 +126,13 @@
     }
   }
 }
+
+@media screen and (max-width: 724px){
+  .rentalPackages{
+    padding-top: 50px;
+  }
+}
+
 @media screen and (max-width: 440px){
   .rentalPackages{
     padding-left: 10px;
@@ -142,10 +149,16 @@
     }
   }
 }
-@media screen and (max-width: 327px){
+@media screen and (max-width: 370px){
   .rentalPackages{
+    .info-wrap{
+      .buttons-wrap{
+        justify-content: center;
+      }
+    }
     .btn{
-      min-width: 210px;
+      min-width: 220px;
+      width: 210px;
     }
   }
 }
