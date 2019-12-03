@@ -137,8 +137,15 @@
   .rentalPackages{
     padding-left: 10px;
     padding-right: 10px;
+    .info-wrap{
+      .info{
+        padding: 10px;
+        height: 120px;
+        }
+      }
+    }
   }
-}
+
 @media screen and (max-width: 340px){
   .rentalPackages{
     .info-wrap{

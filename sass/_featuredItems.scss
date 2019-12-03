@@ -162,11 +162,6 @@
      padding-left: 40px;
      padding-right: 40px;
     .info-wrap{
-      //.action-wrap{
-      //  max-width: 350px;
-      //  margin-right: auto;
-      //  margin-left: auto;
-      //}
     }
   }
 }
@@ -198,6 +193,15 @@
   .featuredItems{
     padding-left: 10px;
     padding-right: 10px;
+    .info-wrap{
+      .title-wrap{
+        padding: 10px;
+      }
+      .info{
+        padding: 10px;
+        height: 120px;
+      }
+    }
   }
 }
 @media screen and (max-width: 360px){

@@ -1,11 +1,12 @@
 .footer{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   font-family: "GilroyRegular", sans-serif;
   color: #fff;
   background-color: #001157;
-  padding-bottom: 30px;
+  padding: 0 20px 30px;
 
   a{
     display: inline-block;
@@ -29,6 +30,9 @@
     font-size: 14px;
     letter-spacing: 0.28px;
     line-height: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .scroll-to-top{
     background-color: white;
@@ -60,6 +64,23 @@
       @include transform(rotate(134deg));
       border-left: 2px solid #FFFFFF;
       border-bottom: 2px solid #FFFFFF;
+    }
+  }
+}
+
+@media screen and (max-width: 550px){
+  .footer{
+    .copyright{
+      max-width: 200px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .navigation{
+      max-width: 100px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   }
 }
