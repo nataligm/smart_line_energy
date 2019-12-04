@@ -105,12 +105,12 @@
     .info-wrap{
       .col:last-child{
         justify-content: center;
-        margin: auto;
+
       }
     }
   }
 }
-@media screen and (max-width: 1040px){
+@media screen and (max-width: 1110px){
   .rentalPackages{
     padding-left: 40px;
     padding-right: 40px;
@@ -120,14 +120,28 @@
       padding-right: 0;
     }
     .info-wrap{
-      max-width: 350px;
+      max-width: 800px;
+      .col {
+        margin-bottom: 30px;
+      }
+      .col:last-child {
+        margin: 0 auto;
+      }
     }
   }
 }
 
-@media screen and (max-width: 724px){
+@media screen and (max-width: 800px){
   .rentalPackages{
-    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 760px){
+  .rentalPackages{
+    .info-wrap {
+      max-width: 350px;
+    }
   }
 }
 
@@ -149,7 +163,8 @@
     .info-wrap{
       .col{
         max-width: 300px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }

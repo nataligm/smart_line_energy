@@ -146,24 +146,39 @@
 @media screen and (max-width: 1400px) {
   .RentServices {
     .info-wrap {
-      .col{
-        margin-bottom: 20px;
-      }
       .col:last-child {
         justify-content: center;
-        margin: auto;
       }
     }
   }
 }
 
-
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1120px) {
   .RentServices {
     padding-left: 40px;
     padding-right: 40px;
-
     .info-wrap {
+      max-width: 800px;
+      .col{
+        margin-bottom: 30px;
+        &:last-child{
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px){
+  .RentServices {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 760px){
+  .RentServices{
+    .info-wrap{
       max-width: 350px;
     }
   }
@@ -206,11 +221,11 @@
       min-width: 120px;
       width: 120px;
     }
-
     .info-wrap {
       .col {
         max-width: 300px;
-        margin: auto;
+        margin-right: auto;
+        margin-left: auto;
       }
     }
   }
