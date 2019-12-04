@@ -1,4 +1,4 @@
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -8,15 +8,17 @@
   background-color: #001157;
   padding: 0 20px 30px;
 
-  a{
+  a {
     display: inline-block;
   }
-  .logo-image{
+
+  .logo-image {
     width: 133px;
     height: 40.6px;
     margin-bottom: 30px;
   }
-  .navigation{
+
+  .navigation {
     margin-bottom: 20px;
     max-width: 390px;
     width: 390px;
@@ -26,7 +28,8 @@
     letter-spacing: 0.32px;
     line-height: 19px;
   }
-  .copyright{
+
+  .copyright {
     font-size: 14px;
     letter-spacing: 0.28px;
     line-height: 16px;
@@ -34,14 +37,16 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .scroll-to-top{
+
+  .scroll-to-top {
     background-color: white;
     width: 55px;
     height: 55px;
     border-radius: 50px;
     position: relative;
     top: -23px;
-    &:before{
+
+    &:before {
       content: '';
       position: absolute;
       width: 40px;
@@ -53,30 +58,32 @@
       left: 50%;
       @include transform(translate(-50%, -50%));
     }
-    &:after{
+
+    &:after {
       content: '';
       position: absolute;
       width: 9px;
       height: 9px;
       top: 45%;
       left: 40%;
-      @include transform-origin(center);
-      @include transform(rotate(134deg));
+      transform-origin: center;
+      transform: rotate(134deg);
       border-left: 2px solid #FFFFFF;
       border-bottom: 2px solid #FFFFFF;
     }
   }
 }
 
-@media screen and (max-width: 550px){
-  .footer{
-    .copyright{
+@media screen and (max-width: 550px) {
+  .footer {
+    .copyright {
       max-width: 200px;
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
-    .navigation{
+
+    .navigation {
       max-width: 100px;
       flex-direction: column;
       align-items: center;

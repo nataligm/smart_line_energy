@@ -1,4 +1,4 @@
-.RentServices{
+.RentServices {
   background-image: url("../images/bg/rentalEqServ.png");
   background-size: cover;
   background-position: center;
@@ -6,16 +6,18 @@
   padding: 50px 165px 0;
   display: flex;
   align-items: center;
-  @include flex-wrap(wrap);
-  @include justify-content(center);
-  .container{
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .container {
     width: 100%;
-    @include flex;
-    @include flex-direction(column);
-    @include align-items(center);
-    @include flex-wrap(wrap);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   }
-  .section-title{
+
+  .section-title {
     font-family: "GilroySemiBold", sans-serif;
     color: $basic-orange;
     font-size: 36px;
@@ -24,10 +26,12 @@
     margin-bottom: 30px;
     text-align: center;
   }
-  .st2{
+
+  .st2 {
     margin-bottom: 102px;
   }
-  .rent-description{
+
+  .rent-description {
     font-size: 16px;
     letter-spacing: 0.32px;
     line-height: 19px;
@@ -35,65 +39,77 @@
     max-width: 729px;
     margin-bottom: 30px;
   }
-  .info-wrap{
+
+  .info-wrap {
     max-width: 1110px;
     width: 100%;
-    @include flex;
-    @include flex-wrap(wrap);
-    @include justify-content(space-between);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 50px;
-    .col{
+
+    .col {
       border-radius: 10px;
       width: 350px;
       box-shadow: 0 10px 30px #0000001A;
-      img{
+
+      img {
         height: 100%;
         border-radius: 10px 10px 0 0;
       }
     }
-    .picture{
+
+    .picture {
       height: 200px;
       background-color: #363636;
       border-radius: 10px 10px 0 0;
     }
-    .info{
+
+    .info {
       padding: 20px;
       background-color: #fff;
     }
-    h3{
+
+    h3 {
       font-family: "GilroySemiBold", sans-serif;
       margin-bottom: 20px;
       font-size: 24px;
       letter-spacing: 0.48px;
       line-height: 29px;
     }
-    p{
+
+    p {
       line-height: 22px;
       max-height: 90px;
       min-height: 90px;
       overflow: hidden;
     }
   }
-  .btn{
+
+  .btn {
     display: flex;
     justify-content: center;
     align-items: center;
     @include btn-w-145;
     font-size: 16px;
   }
-  .orange-btn{
+
+  .orange-btn {
     background-color: $basic-orange;
     box-shadow: $box-shadow-orange-btn;
   }
-  .blue-btn{
+
+  .blue-btn {
     background-color: $basic-blue;
     box-shadow: $box-shadow-blue-btn;
   }
-  .grey-line{
+
+  .grey-line {
     height: 1px;
     width: 100%;
   }
-  .buttons-wrap{
+
+  .buttons-wrap {
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -102,81 +118,92 @@
     border-radius: 0 0 10px 10px;
   }
 }
-.tigerRentals{
-  .video-blue-block{
+
+.tigerRentals {
+  .video-blue-block {
     height: 312px;
     background-color: $basic-blue;
     position: relative;
   }
-  video{
+
+  video {
     box-sizing: border-box;
     position: absolute;
     top: -23%;
     left: 50%;
-    transform: translate(-50% );
+    transform: translate(-50%);
     border: 4px solid $basic-blue;
   }
 }
 
-@media screen and (max-width: 1400px){
-  .RentServices{
-    .info-wrap{
+@media screen and (max-width: 1400px) {
+  .RentServices {
+    .info-wrap {
       max-width: 720px;
-      .col:nth-last-child(2), .col:nth-last-child(3){
+
+      .col:nth-last-child(2), .col:nth-last-child(3) {
         margin-bottom: 40px;
       }
-      .col:last-child{
+
+      .col:last-child {
         justify-content: center;
         margin: auto;
       }
     }
   }
 }
-@media screen and (max-width: 1040px){
-  .RentServices{
+
+@media screen and (max-width: 1040px) {
+  .RentServices {
     padding-left: 40px;
     padding-right: 40px;
-    .info-wrap{
+
+    .info-wrap {
       max-width: 350px;
     }
   }
 }
+
 @media screen and (max-width: 724px) {
-  .RentServices{
-    .st2{
+  .RentServices {
+    .st2 {
       margin-bottom: 30px;
     }
   }
-  .tigerRentals{
-    video{
+  .tigerRentals {
+    video {
       max-width: 400px;
       border: none;
     }
   }
 }
-@media screen and (max-width: 440px){
-  .RentServices{
+
+@media screen and (max-width: 440px) {
+  .RentServices {
     padding-right: 10px;
     padding-left: 10px;
-    .buttons-wrap{
+
+    .buttons-wrap {
       padding-left: 10px;
       padding-right: 10px;
     }
   }
-  .tigerRentals{
-    video{
+  .tigerRentals {
+    video {
       max-width: 300px;
     }
   }
 }
-@media screen and (max-width: 340px){
-  .RentServices{
-    .btn{
+
+@media screen and (max-width: 340px) {
+  .RentServices {
+    .btn {
       min-width: 120px;
       width: 120px;
     }
-    .info-wrap{
-      .col{
+
+    .info-wrap {
+      .col {
         max-width: 300px;
         margin: auto;
       }

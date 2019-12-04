@@ -1,4 +1,4 @@
-.header{
+.header {
   box-sizing: border-box;
   border: 1px solid white;
   display: flex;
@@ -9,49 +9,59 @@
   background-position: center;
   font-family: "GilroyRegular", sans-serif;
   text-align: center;
-  a{
+
+  a {
     display: inline-block;
     font-family: "GilroyRegular", sans-serif;
   }
-  .logo-image{
+
+  .logo-image {
     width: 133px;
     height: 40.6px;
     margin-right: 152px;
-    img{
+
+    img {
       height: 100%;
     }
   }
-  .ht-btn{
+
+  .ht-btn {
     @include btn-w-160;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 3px 6px #00000040;
   }
-  .orange-btn{
+
+  .orange-btn {
     background-color: $basic-orange;
     box-shadow: $box-shadow-orange-btn;
   }
-  .blue-btn{
+
+  .blue-btn {
     background-color: $basic-blue;
     box-shadow: $box-shadow-blue-btn;
   }
-  .view-pln-btn{
+
+  .view-pln-btn {
     background-color: #ffffff;
     color: $basic-orange;
     box-shadow: 0 3px #B7B7B7;
   }
-  .ht-buttons, h1{
+
+  .ht-buttons, h1 {
     font-family: "GilroySemiBold", sans-serif;
   }
-  .ht-buttons{
+
+  .ht-buttons {
     max-width: 350px;
     min-width: 350px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  h1{
+
+  h1 {
     font-size: 48px;
     letter-spacing: 0.96px;
     color: #FFFFFF;
@@ -59,7 +69,8 @@
     max-width: 790px;
     margin: 0 auto 30px;
   }
-  .header-top{
+
+  .header-top {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -72,14 +83,16 @@
     height: 53px;
     position: relative;
   }
-  .ht-details{
+
+  .ht-details {
     margin-bottom: 50px;
     color: #fff;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.36px;
   }
-  .header-bottom{
+
+  .header-bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,24 +100,28 @@
     max-width: 790px;
 
   }
-  .navigation{
+
+  .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     width: 825px;
-    .nav-link{
-      &:nth-last-child(2){
+
+    .nav-link {
+      &:nth-last-child(2) {
         margin-right: 248px;
       }
     }
   }
-  .burger-btn{
+
+  .burger-btn {
     display: none;
     position: relative;
     width: 30px;
     height: 30px;
-    .burger-line{
+
+    .burger-line {
       width: 28px;
       height: 3px;
       background-color: #fff;
@@ -112,75 +129,92 @@
       top: 4px;
       right: 10px;
     }
-    .first-l{
+
+    .first-l {
       top: 14px;
     }
-    .second-l{
+
+    .second-l {
       top: 24px;
       transition: 0.5s;
     }
-    .third-l{
+
+    .third-l {
       top: 24px;
       transition: 0.5s;
     }
   }
 }
 
-@media screen and (max-width: 1445px){
-  .header{
-    .navigation{
+@media screen and (max-width: 1445px) {
+  .header {
+    .navigation {
       width: 600px;
+
       .nav-link:nth-last-child(2) {
         margin-right: 0;
       }
     }
   }
 }
-@media screen and (max-width: 1217px){
-  .header{
+
+@media screen and (max-width: 1217px) {
+  .header {
     padding-left: 60px;
     padding-right: 60px;
-    .navigation{
+
+    .navigation {
       width: 550px;
     }
-    .logo-image{
+
+    .logo-image {
       margin-right: 52px;
     }
   }
 }
-@media screen and (max-width: 1073px){
-  .header{
+
+@media screen and (max-width: 1073px) {
+  .header {
     padding-bottom: 64px;
-    .navigation{
+
+    .navigation {
       display: none;
       width: 160px;
       flex-direction: column;
       position: absolute;
       right: 10px;
       top: 50px;
-      .nav-link{
+
+      .nav-link {
         padding: 4px 0;
-        &:nth-last-child(2){
+
+        &:nth-last-child(2) {
           margin-right: 0;
         }
       }
     }
-    .burger-btn{
-        display: block;
-      }
+
+    .burger-btn {
+      display: block;
+    }
+
     .header-top.menu-open {
       .navigation {
         display: flex;
       }
+
       .burger-btn {
         position: relative;
+
         .first-l {
           display: none;
         }
+
         .second-l {
           transform: rotate(45deg);
           transition: 0.5s;
         }
+
         .third-l {
           transform: rotate(-45deg);
           transition: 0.5s;
@@ -189,19 +223,23 @@
     }
   }
 }
-@media screen and (max-width: 480px){
-  .header{
+
+@media screen and (max-width: 480px) {
+  .header {
     padding-left: 40px;
     padding-right: 40px;
-    h1{
+
+    h1 {
       font-size: 43px;
       line-height: 43px;
     }
-    .ht-buttons{
+
+    .ht-buttons {
       min-width: 160px;
       flex-direction: column;
-      .ht-btn{
-        &:first-child{
+
+      .ht-btn {
+        &:first-child {
           margin-bottom: 15px;
         }
       }
