@@ -1,6 +1,5 @@
 .header {
   box-sizing: border-box;
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
   padding: 30px 165px 364px;
@@ -24,7 +23,6 @@
       height: 100%;
     }
   }
-
   .ht-btn {
     @include btn-w-160;
     display: flex;
