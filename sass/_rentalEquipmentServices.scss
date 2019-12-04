@@ -2,7 +2,7 @@
   background-image: url("../images/bg/rentalEqServ.png");
   background-size: cover;
   background-position: center;
-  font-family: "GilroyRegular", sans-serif;
+  font-family: "Gilroy", sans-serif;
   padding: 50px 165px 0;
   display: flex;
   align-items: center;
@@ -18,7 +18,8 @@
   }
 
   .section-title {
-    font-family: "GilroySemiBold", sans-serif;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
     color: $basic-orange;
     font-size: 36px;
     letter-spacing: 0.72px;
@@ -71,7 +72,8 @@
     }
 
     h3 {
-      font-family: "GilroySemiBold", sans-serif;
+      font-family: "Gilroy", sans-serif;
+      font-weight: 600;
       margin-bottom: 20px;
       font-size: 24px;
       letter-spacing: 0.48px;
