@@ -6,12 +6,12 @@
   background-image: url("../images/bg/header.png");
   background-size: cover;
   background-position: center;
-  font-family: "GilroyRegular", sans-serif;
+  font-family: "Gilroy", sans-serif;
   text-align: center;
 
   a {
     display: inline-block;
-    font-family: "GilroyRegular", sans-serif;
+    font-family: "Gilroy", sans-serif;
   }
 
   .logo-image {
@@ -48,7 +48,8 @@
   }
 
   .ht-buttons, h1 {
-    font-family: "GilroySemiBold", sans-serif;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
   }
 
   .ht-buttons {
