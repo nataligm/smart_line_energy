@@ -49,9 +49,34 @@
       }
     }
   }
-  .breadcrumbs-wrap{
+  .bc-container{
     background-color: #1336C9;
     height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .breadcrumbs-wrap{
+    width: 1110px;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .arr-link-wrap{
+      display: flex;
+      align-items: center;
+    }
+    li{
+      display: inline;
+      color: #98ACFF;
+    }
+    .come-bck-link{
+      position: relative;
+    }
+
+    .arrow-bck{
+      margin-right: 6px;
+    }
   }
   .info-wrap{
     width: 100%;
