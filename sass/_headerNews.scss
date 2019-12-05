@@ -4,15 +4,15 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: "GilroyRegular", sans-serif;
-  text-align: center;
-  padding: 27px 0 378px;
+  font-family: "Gilroy", sans-serif;
+  padding: 24px 0 378px;
+  position: relative;
   .header-top {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1110px;
-    margin: 0 auto;
+    margin: 0 auto 22px;
     font-size: 16px;
     letter-spacing: 0.32px;
     line-height: 19px;
@@ -35,7 +35,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    //box-shadow: 0 3px 6px #00000040;
   }
   .navigation {
     display: flex;
@@ -48,6 +47,73 @@
       &:nth-last-child(2) {
         margin-right: 248px;
       }
+    }
+  }
+  .breadcrumbs-wrap{
+    background-color: #1336C9;
+    height: 40px;
+  }
+  .info-wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .btn{
+      width: 690px;
+      height: 40px;
+    }
+    .col{
+      border-radius: 10px;
+      width: 730px;
+      box-shadow: 0 10px 30px #0000001A;
+      position: absolute;
+      top: 185px;
+      left: 50%;
+      transform: translate(-50%);
+      img{
+        height: 100%;
+      }
+    }
+    .picture{
+      height: 238px;
+      background-color: #363636;
+    }
+    p{
+      font-size: 16px;
+      line-height: 22px;
+      max-height: 90px;
+      min-height: 90px;
+    }
+    .info{
+      padding: 20px;
+      background-color: #fff;
+    }
+    .title-wrap{
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+      background-color: #fff;
+    }
+    h3{
+      font-family: "Gilroy", sans-serif;
+      font-weight: 600;
+      margin-bottom: 5px;
+      font-size: 24px;
+      letter-spacing: 0.48px;
+      line-height: 29px;
+    }
+    .subtitle{
+      display: inline-block;
+      font-size: 14px;
+      letter-spacing: 0.28px;
+      line-height: 22px;
+    }
+    .buttons-wrap{
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      border-top: 1px solid #DDDDDD;
+      background-color: #fff;
+      border-radius: 0 0 10px 10px;
     }
   }
 }
