@@ -36,6 +36,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    span{
+      &:nth-child(-n+2){
+        margin-right: 5px;
+      }
+    }
   }
 
   .scroll-to-top {
