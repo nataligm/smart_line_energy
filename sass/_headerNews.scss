@@ -1,55 +1,55 @@
-.headerNews{
-  box-sizing: border-box;
-  background-image: url("../images/bg/header.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: "Gilroy", sans-serif;
+.header.headerNews{
+  //box-sizing: border-box;
+  //background-image: url("../images/bg/header.png");
+  //background-size: cover;
+  //background-position: center;
+  //background-repeat: no-repeat;
+  //font-family: "Gilroy", sans-serif;
   padding: 24px 0 378px;
-  position: relative;
+  //position: relative;
   .header-top {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1110px;
+  //  display: flex;
+  //  justify-content: space-between;
+  //  flex-wrap: wrap;
+  //  max-width: 1110px;
     margin: 0 auto 22px;
-    font-size: 16px;
-    letter-spacing: 0.32px;
-    line-height: 19px;
-    align-self: center;
-    height: 53px;
-    position: relative;
-    padding: 0 165px;
+  //  font-size: 16px;
+  //  letter-spacing: 0.32px;
+  //  line-height: 19px;
+  //  align-self: center;
+  //  height: 53px;
+  //  position: relative;
+  //  padding: 0 165px;
   }
-  .logo-image {
-    width: 133px;
-    height: 40.6px;
-    margin-right: 152px;
-    img {
-      height: 100%;
-    }
-  }
-  .orange-btn {
-    background-color: $basic-orange;
-    box-shadow: $box-shadow-orange-btn;
-    @include btn-w-160;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 825px;
-
-    .nav-link {
-      &:nth-last-child(2) {
-        margin-right: 248px;
-      }
-    }
-  }
+  //.logo-image {
+  //  width: 133px;
+  //  height: 40.6px;
+  //  margin-right: 152px;
+  //  img {
+  //    height: 100%;
+  //  }
+  //}
+  //.orange-btn {
+  //  background-color: $basic-orange;
+  //  box-shadow: $box-shadow-orange-btn;
+  //  @include btn-w-160;
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //}
+  //.navigation {
+  //  display: flex;
+  //  justify-content: space-between;
+  //  align-items: center;
+  //  flex-wrap: wrap;
+  //  width: 825px;
+  //
+  //  .nav-link {
+  //    &:nth-last-child(2) {
+  //      margin-right: 248px;
+  //    }
+  //  }
+  //}
   .bc-container{
     background-color: #1336C9;
     height: 40px;
