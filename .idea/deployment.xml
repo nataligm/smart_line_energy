@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="SmartEnergy">
+    <serverData>
+      <paths name="SmartEnergy">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/web/smart-en.cp.co.ua/public_shtml" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/node_modules" />
+            <excludedPath local="true" path="$PROJECT_DIR$/pages" />
+            <excludedPath local="true" path="$PROJECT_DIR$/sass" />
+            <excludedPath local="true" path="$PROJECT_DIR$/templates" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+            <excludedPath local="true" path="$PROJECT_DIR$/debug.log" />
+            <excludedPath local="true" path="$PROJECT_DIR$/gulpfile.js" />
+            <excludedPath local="true" path="$PROJECT_DIR$/package-lock.json" />
+            <excludedPath local="true" path="$PROJECT_DIR$/package.json" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="SmartEnergyP2">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/web/smart-en.cp.co.ua/public_html" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/node_modules" />
+            <excludedPath local="true" path="$PROJECT_DIR$/pages" />
+            <excludedPath local="true" path="$PROJECT_DIR$/sass" />
+            <excludedPath local="true" path="$PROJECT_DIR$/templates" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+            <excludedPath local="true" path="$PROJECT_DIR$/debug.log" />
+            <excludedPath local="true" path="$PROJECT_DIR$/gulpfile.js" />
+            <excludedPath local="true" path="$PROJECT_DIR$/package-lock.json" />
+            <excludedPath local="true" path="$PROJECT_DIR$/package.json" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

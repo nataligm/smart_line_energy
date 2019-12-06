@@ -1,6 +1,6 @@
 .newsList {
   padding: 262px 40px 74px;
-  font-family: "Gilroy", sans-serif;
+  //font-family: "Gilroy", sans-serif;
   .container{
     width: 100%;
     display: flex;
@@ -78,6 +78,36 @@
     box-shadow: $box-shadow-orange-btn;
   }
   .pagination{
+    display: flex;
+    max-width: 1110px;
+    margin-top: 20px;
+    a{
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 50px;
+      box-shadow: 0 3px rgba(217, 217, 217, 1);
+      color: $basic-orange;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.28px;
+      font-family: "Gilroy", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
+
+      &:not(:last-child){
+         margin-right: 20px;
+       }
+      &:active, &:hover{
+        background-color: $basic-orange;
+        box-shadow: $box-shadow-orange-btn;
+        color: #FFF;
+      }
+    }
+    .link-last, .link-first{
+      width: 100px;
+    }
   }
 }
