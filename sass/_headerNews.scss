@@ -1,87 +1,7 @@
-.header.headerNews{
-  //box-sizing: border-box;
-  //background-image: url("../images/bg/header.png");
-  //background-size: cover;
-  //background-position: center;
-  //background-repeat: no-repeat;
-  //font-family: "Gilroy", sans-serif;
-  padding: 24px 0 378px;
-  //position: relative;
-  .header-top {
-  //  display: flex;
-  //  justify-content: space-between;
-  //  flex-wrap: wrap;
-  //  max-width: 1110px;
-    margin: 0 auto 22px;
-  //  font-size: 16px;
-  //  letter-spacing: 0.32px;
-  //  line-height: 19px;
-  //  align-self: center;
-  //  height: 53px;
-  //  position: relative;
-  //  padding: 0 165px;
-  }
-  //.logo-image {
-  //  width: 133px;
-  //  height: 40.6px;
-  //  margin-right: 152px;
-  //  img {
-  //    height: 100%;
-  //  }
-  //}
-  //.orange-btn {
-  //  background-color: $basic-orange;
-  //  box-shadow: $box-shadow-orange-btn;
-  //  @include btn-w-160;
-  //  display: flex;
-  //  align-items: center;
-  //  justify-content: center;
-  //}
-  //.navigation {
-  //  display: flex;
-  //  justify-content: space-between;
-  //  align-items: center;
-  //  flex-wrap: wrap;
-  //  width: 825px;
-  //
-  //  .nav-link {
-  //    &:nth-last-child(2) {
-  //      margin-right: 248px;
-  //    }
-  //  }
-  //}
-  .bc-container{
-    background-color: #1336C9;
-    height: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .breadcrumbs-wrap{
-    width: 1110px;
-    max-width: 1110px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 165px;
-    .arr-link-wrap{
-      display: flex;
-      align-items: center;
-    }
-    li{
-      display: inline;
-      color: #98ACFF;
-      span{
-        color: #fff;
-      }
-    }
-    .come-bck-link{
-      position: relative;
-    }
-
-    .arrow-bck{
-      margin-right: 6px;
-    }
+.header.headerBC.headerNews{
+  padding: 0 0 378px;
+  .header-wrapper {
+    background-color: rgba(26, 65, 228, 1);
   }
   .info-wrap{
     width: 100%;
@@ -147,24 +67,3 @@
     }
   }
 }
-@media screen and (max-width: 1445px) {
-  .headerNews {
-    .header-top, .breadcrumbs-wrap{
-      padding-right: 40px;
-      padding-left: 40px;
-    }
-    .navigation {
-      .nav-link:nth-last-child(2) {
-        margin-right: 0;
-      }
-    }
-  }
-}
-//@media screen and (max-width: 1200px) {
-//  .headerNews {
-//    //.breadcrumbs-wrap{
-//    //  padding-top: 80px;
-//    //  padding-left: 80px;
-//    //}
-//  }
-//}
