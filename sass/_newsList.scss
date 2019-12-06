@@ -8,7 +8,6 @@
     align-items: center;
     flex-wrap: wrap;
     .pagination{
-      background-color: yellowgreen;
       height: 50px;
       width: 100%;
     }
@@ -77,5 +76,8 @@
   .orange-btn{
     background-color: $basic-orange;
     box-shadow: $box-shadow-orange-btn;
+  }
+  .pagination{
+
   }
 }
