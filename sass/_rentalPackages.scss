@@ -94,10 +94,6 @@
     @include btn-w-310;
     font-size: 16px;
   }
-  .orange-btn{
-    background-color: $basic-orange;
-    box-shadow: $box-shadow-orange-btn;
-  }
 }
 @media screen and (max-width: 1400px){
   .rentalPackages{

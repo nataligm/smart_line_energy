@@ -2,12 +2,19 @@
 @import "./_reset";
 @import "helpers/variables";
 @import "helpers/mixins";
+
+@import "common";
+
+@import "index";
+@import "news";
+
 @import "header";
+@import "breadCrumbs";
+@import "footer";
+
 @import "rentalEquipmentServices";
 @import "rentalPackages";
 @import "featuredItems";
-@import "footer";
-@import "headerNews";
-@import "headerBreadCrumbs";
 @import "newsList";
 @import "newsItem";
+@import "showcase";

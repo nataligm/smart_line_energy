@@ -3,7 +3,7 @@
 @@include('../templates/head.html')
 
 <body>
-    <header class="header headerBC simple">
+    <header class="header">
         <div class="header-wrapper">
             @@include('../templates/headerTopNav.html')
             <div class="bc-container">
@@ -14,7 +14,7 @@
                             <span>/</span>
                         </li>
                         <li>
-                            <a href="#">News</a>
+                            <a href="/news.html">News</a>
                             <span>/</span>
                         </li>
                         <li>Last news #1</li>
@@ -29,9 +29,10 @@
             </div>
         </div>
     </header>
+
     <section class="newsItem">
         <figure class="main-img">
-            <img src="http://placehold.it/1440x430" alt="newsItem-img">
+            <img src="/images/1440x430.png" alt="newsItem-img">
         </figure>
         <div class="info-wrap">
             <div class="col">
@@ -53,7 +54,7 @@
                     lorem mollis aliquam. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam.
                 </p>
                 <figure class="picture">
-                    <img src="/images/540x200.png" alt="picture">
+                    <img src="/images/920x340.png" alt="picture">
                 </figure>
                 <p>
                     Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam.
@@ -79,7 +80,9 @@
             </div>
         </div>
     </section>
+
     @@include('../templates/footer.html')
+
     <script src="/js/jquery.min.js"></script>
     <script src="/js/main.js"></script>
 </body>

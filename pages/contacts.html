@@ -3,12 +3,31 @@
 @@include('../templates/head.html')
 
 <body>
-@@include('../templates/header.html')
-<!--@@include('../templates/RentalEquipmentServices.html')-->
-<!--@@include('../templates/rentalPackages.html')-->
-<!--@@include('../templates/featuredItems.html')-->
-@@include('../templates/footer.html')
-<script src="/js/jquery.min.js"></script>
-<script src="/js/main.js"></script>
+    <header class="header">
+        <div class="header-wrapper">
+            @@include('../templates/headerTopNav.html')
+            <div class="bc-container">
+                <div class="breadcrumbs-wrap">
+                    <ul>
+                        <li>
+                            <a href="/">Smartline Energy</a>
+                        </li>
+                        <li><span>/</span> Contacts</li>
+                    </ul>
+                    <div class="arr-link-wrap">
+                        <div class="arrow-bck">
+                            <img src="/images/arrow.svg" alt="arrow-bck-img">
+                        </div>
+                        <a href="/" class="come-bck-link">come back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    @@include('../templates/footer.html')
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

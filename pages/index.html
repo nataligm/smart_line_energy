@@ -3,11 +3,33 @@
 @@include('../templates/head.html')
 
 <body>
-    @@include('../templates/header.html')
+    <header class="header main">
+        <div class="header-wrapper">
+            @@include('../templates/headerTopNav.html')
+        </div>
+    </header>
+
+    <div class="showcase">
+        <div class="showcase-container">
+            <h1>
+                Getting rental equipment to you any where, any time!
+            </h1>
+            <div class="ht-details">
+                24 Hours / 7 Days a Week / 365 Days a Year - Dispatch: 1-888-866-0047 or 409-832-9336
+            </div>
+            <div class="ht-buttons">
+                <a href="#" class="get-strd-btn ht-btn orange-btn">GET STARTED</a>
+                <a href="#" class="view-pln-btn ht-btn">VIEW PLAN</a>
+            </div>
+        </div>
+    </div>
+
     @@include('../templates/RentalEquipmentServices.html')
     @@include('../templates/rentalPackages.html')
     @@include('../templates/featuredItems.html')
+
     @@include('../templates/footer.html')
+
     <script src="/js/jquery.min.js"></script>
     <script src="/js/main.js"></script>
 </body>

@@ -3,9 +3,55 @@
 @@include('../templates/head.html')
 
 <body>
-    @@include('../templates/headerNews.html')
+    <header class="header">
+        <div class="header-wrapper">
+            @@include('../templates/headerTopNav.html')
+            <div class="bc-container">
+                <div class="breadcrumbs-wrap">
+                    <ul>
+                        <li>
+                            <a href="/">Smartline Energy</a>
+                        </li>
+                        <li><span>/</span> News</li>
+                    </ul>
+                    <div class="arr-link-wrap">
+                        <div class="arrow-bck">
+                            <img src="/images/arrow.svg" alt="arrow-bck-img">
+                        </div>
+                        <a href="/" class="come-bck-link">come back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="last-news">
+        <div class="col">
+            <div class="title-wrap">
+                <h3>Last news #1</h3>
+                <span class="subtitle">28 November 2019</span>
+            </div>
+            <figure class="picture">
+                <img src="/images/350x200.png" alt="picture">
+            </figure>
+            <div class="info">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="buttons-wrap">
+                <a href="#" class="learn-btn orange-btn btn">Learn more</a>
+            </div>
+        </div>
+    </div>
+
     @@include('../templates/newsList.html')
+
     @@include('../templates/footer.html')
+
     <script src="/js/jquery.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
