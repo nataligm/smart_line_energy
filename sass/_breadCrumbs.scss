@@ -47,6 +47,17 @@
     }
   }
 }
+
+@media screen and (max-width: 480px){
+  .header{
+    .bc-container{
+      .breadcrumbs-wrap{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 410px) {
   .header {
     .bc-container {
@@ -62,6 +73,15 @@
         ul {
           margin-bottom: 10px;
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 370px) {
+  .header{
+    .bc-container{
+      .breadcrumbs-wrap{
+        font-size: 13px;
       }
     }
   }

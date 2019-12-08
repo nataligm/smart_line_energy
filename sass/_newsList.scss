@@ -1,5 +1,5 @@
 .newsList {
-  padding: 262px 40px 74px;
+  padding: 50px 40px 74px;
   font-family: "Gilroy", sans-serif;
   .container{
     width: 100%;
@@ -93,6 +93,7 @@
       line-height: 16px;
       letter-spacing: 0.28px;
       font-family: "Gilroy", sans-serif;
+      text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -101,8 +102,8 @@
          margin-right: 20px;
       }
       &:active, &:hover{
-        background-color: $basic-orange;
-        box-shadow: $box-shadow-orange-btn;
+        background-color: #ffbe5c;
+        box-shadow: 0 3px rgb(222, 159, 64);
         color: #FFF;
       }
     }
@@ -111,6 +112,18 @@
     }
   }
 }
+@media screen and (max-width: 1150px) {
+  .newsList {
+    .info-wrap{
+      max-width: 730px;
+      .col{
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width: 795px) {
   .newsList {
@@ -145,12 +158,35 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .newsList {
+    .pagination{
+      max-width: 350px;
+      a{
+        font-size: 12px;
+        line-height: 13px;
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 390px) {
   .newsList {
     .info-wrap {
       .col {
         width: auto;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 334px) {
+  .newsList{
+    .pagination{
+      max-width: 250px;
     }
   }
 }

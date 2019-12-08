@@ -1,9 +1,13 @@
 .showcase {
   width: 100%;
   box-sizing: border-box;
-
-  background: url(../images/bg/header.png) 50% -250px;
-  background-size: 1809px;
+  background-color: $basic-blue;
+  //background-position: 50% -250px;
+  //background-size: 1809px;
+  background-image: url("../images/bg/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   .showcase-container {
     text-align: center;
@@ -77,6 +81,9 @@
   .showcase {
     background: url(../images/bg/header.png) center;
     background-size: cover;
+    .showcase-container{
+      padding-bottom: 200px;
+    }
   }
 }
 
@@ -94,5 +101,19 @@
         }
       }
     }
+    .showcase-container{
+      h1{
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
   }
 }
+@media screen and (max-width: 425px) {
+  .showcase{
+    .showcase-container{
+      padding-bottom: 100px;
+    }
+  }
+}
+
