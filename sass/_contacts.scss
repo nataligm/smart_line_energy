@@ -83,6 +83,7 @@
         border-radius: 50px;
         border: 1px solid #eeb355;
         font-family: "Gilroy", sans-serif;
+        letter-spacing: 0.32px;
         padding: 11px 0 10px 20px;
 
         &:first-of-type {
@@ -97,6 +98,8 @@
         border: 1px solid #eeb355;
         box-sizing: border-box;
         padding: 11px 20px 0 20px;
+        font-family: "Gilroy", sans-serif;
+        letter-spacing: 0.32px
       }
 
       .send-message {
